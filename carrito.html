@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Carrito de compras</title>
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="responsive.css">
+
+</head>
+<body>
+    <header class="header">
+        <a href="paginaweb.html" class="logo"><i class="fas fa-utensils"></i>TAKANA</a>
+        
+              <nav class="navbar">
+                <a class="active" href="paginaweb.html">INICIO</a>
+                <a href="#dishes">Platos Principales</a>
+                <a href="nosotros.html">Sobre Nosotros</a>
+                <a href="#menu">Acompañamiento</a>
+                <a href="#review">Comentarios</a>
+                <a href="#order">Ordena Ya</a>
+              </nav>
+        
+              <div class="icons">
+                 <i class="fas fa-bars" id="menu-bars"></i>
+                 <i class="fas fa-search" id="search-icon"></i>
+                 <a href="#" class="fas fa-heart"></a>
+                 <a href="#" class="fas fa-shopping-cart"></a>
+             </div>
+        
+           </section>
+        
+    </header>
+    <div class="heading">
+      <div></div>
+      <br>
+      <br>
+      <br></br>
+      <h3 class="sub-heading"> Carrito de Pedido </h3>
+        <p><a href="paginaweb.html">Inicio </a> <span> / Carrito de Pedido</span></p>
+     </div>
+     
+     <section class="products">
+     
+        <h1 class="title">Tu Carrito de Compra</h1>
+     
+        <div class="cart-total">
+           <p>Monto Total a Pagar : <span>S/77.00/-</span></p>
+           <a href="Confirmacion de pago.html" class="btn">Pedidos a Pagar</a>
+           </div>
+        </div>
+     
+        <div class="box-container">
+     
+           <div class="box">
+              <a href="Platos tradicionales.html" class="fas fa-eye"></a>
+              <button class="fas fa-times" type="submit" name="delete" onclick="return confirm('delete this item?')"></button>
+              <img src="images/dish-1.png" alt="">
+              <div class="name">Tacu Tacu a lo pobre</div>
+              <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+           </div>
+              <div class="flex">
+                 <div class="price"><span>S/.</span>25.00</div>
+                 <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+                 <button type="submit" class="fas fa-edit"></button>
+              </div>
+              <div class="sub-total">sub total : <span>S/25.00</span></div>
+           </div>
+     
+           <div class="box">
+              <a href="Platos tradicionales.html" class="fas fa-eye"></a>
+              <button class="fas fa-times" type="submit" name="delete" onclick="return confirm('delete this item?')"></button>
+              <img src="images/dish-2.png" alt="">
+              <div class="name">Causa de Mariscos</div>
+              <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+           </div>
+              <div class="flex">
+                 <div class="price"><span>S/</span>28.00</div>
+                 <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+                 <button type="submit" class="fas fa-edit"></button>
+              </div>
+              <div class="sub-total">sub total : <span>S/.28.00</span></div>
+           </div>
+     
+           <div class="box">
+              <a href="Platos tradicionales.html" class="fas fa-eye"></a>
+              <button class="fas fa-times" type="submit" name="delete" onclick="return confirm('delete this item?')"></button>
+              <img src="images/dish-3.png" alt="">
+              <div class="name">Lomo Saltado</div>
+              <div class="flex">
+                 <div class="price"><span>S/</span>24.00</div>
+                 <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+                 <button type="submit" class="fas fa-edit"></button>
+              </div>
+              <div class="sub-total">sub total : <span>S/24.00</span></div>
+           </div>
+     
+        </div>
+     
+        <div class="more-btn">
+           <a href="#" class="delete-btn" onclick="return confirm('delete all from cart?');">delete all</a>
+        </div>
+     
+     </section>
+     

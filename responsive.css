@@ -1,0 +1,70 @@
+nav .nav-items {
+    position: absolute;
+    top: 5rem;
+    right: 4rem;
+    height: 220px;
+    width: 200px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: #fff;
+    border: 1px solid silver;
+    border-radius: 0.2rem;
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 760px) {
+    .hot-deals .countdown-wrap {
+        margin-top: 4rem;
+        padding-bottom: 3rem;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .countdown-wrap .timer {
+        margin: 3rem;
+    }
+
+    .countdown-wrap .timer .timer-bg {
+        -webkit-transform: rotate(55deg);
+        -ms-transform: rotate(55deg);
+        transform: rotate(55deg);
+    }
+
+
+
+    .countdown-wrap .timer .timer-bg {
+        height: 190px;
+        width: 190px;
+    }
+
+    .countdown-wrap .timer {
+        margin: 2rem;
+    }
+
+
+    .countdown-wrap .timer .timer-bg {
+        height: 200px;
+        width: 200px;
+    }
+    
+    .countdown-wrap .timer {
+            margin: 2.4rem;
+    }
+}

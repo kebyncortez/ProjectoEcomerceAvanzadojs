@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Confirmacion de Pago</title>
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="responsive.css">
+
+</head>
+<body>
+    <header class="header">
+        <a href="paginaweb.html" class="logo"><i class="fas fa-utensils"></i>TAKANA</a>
+        
+              <nav class="navbar">
+                <a class="active" href="paginaweb.html">INICIO</a>
+                <a href="#dishes">Platos Principales</a>
+                <a href="nosotros.html">Sobre Nosotros</a>
+                <a href="#menu">Acompañamiento</a>
+                <a href="#review">Comentarios</a>
+                <a href="#order">Ordena Ya</a>
+              </nav>
+        
+              <div class="icons">
+                 <i class="fas fa-bars" id="menu-bars"></i>
+                 <i class="fas fa-search" id="search-icon"></i>
+                 <a href="#" class="fas fa-heart"></a>
+                 <a href="#" class="fas fa-shopping-cart"></a>
+             </div>
+        
+           </section>
+        
+    </header>
+    <div class="heading">
+      <div></div>
+      <br>
+      <br>
+      <br></br>
+      <h3 class="sub-heading"> Confirmacion de Pago</h3>
+        <p><a href="paginaweb.html">Inicio </a> <span> / Baucher de Pago</span></p>
+     </div>
+     <section class="checkout">
+
+        <h1 class="title">Orden de Pedido</h1>
+     
+        <form action="" method="post">
+           <div class="cart-items">
+              <h3>Carrito de Pedidos</h3>
+              <p><span class="name">Tacu Tacu a lo pobre</span><span class="price">S/25.00</span></p>
+              <p><span class="name">Causa de Mariscos</span><span class="price">S/28.00</span></p>
+              <p><span class="name">Lomo Saltado</span><span class="price">S/24.00</span></p>
+              <p class="grand-total"><span class="name">Precio total :</span> <span class="price">S/77.00</span></p>
+              <a href="carrito.html" class="btn">Carrito de Compra</a>
+           </div>
+           <div class="user-info">
+              <h3>Tu Informacion</h3>
+              <p><i class="fas fa-user"></i> <span>shaikh anas</span></p>
+              <p><i class="fas fa-phone"></i> <span>1234567890</span></p>
+              <p><i class="fas fa-envelope"></i> <span>shaikhanas@gmail.com</span></p>
+              <a href="update_profile.html" class="btn">Actualizar Informacion</a>
+              <h3>delivery address</h3>
+              <p class="address"><i class="fas fa-map-marker-alt"></i> <span>flat no. 1, building no. 1, jogeshwari west, mumbai, india - 400104</span></p>
+              <a href="update_address.html" class="btn">Actualizar Correo</a>
+              <select name="method" class="box" required>
+                 <option value="" disabled selected>select payment method</option>
+                 <option value="cash on delivery">Pago de Deliverry</option>
+                 <option value="credit card">Tarjeta de Credito</option>
+                 <option value="paytm">paytm</option>
+                 <option value="paypal">paypal</option>
+              </select>
+           </div>
+           <input  href="MiOrden.html" type="submit" value="Ordenar" name="order" class="btn order-btn">
+           <a href="MiOrden.html" class="Enviar-btn" onclick="return confirm('Desea confirmar Pedido');">Enviar Pedido</a>
+        </form>
+     
+     </section>
+     
+</body>
+</html>
